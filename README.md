@@ -1,6 +1,6 @@
 Quick Chef
 
-https://github.com/mjstthomas/recipeApp
+
 
 screenshots
 
