@@ -1,0 +1,320 @@
+body {
+	background-color: #2a2b2a;
+	font-family: 'Comfortaa', sans-serif;
+	width: 100%;
+	height: 100%;
+  	margin: 0;
+  	color: #fcd2cf;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+.favicon{
+	height: 10px;
+	width: 10px;
+}
+.hidden{
+  display: none;
+}
+.navBar {
+	position: fixed;
+	width: 250px;
+	height: 477px;  left: -22px;
+	top: 189px;
+	background-color: #33FF87;
+	border-radius: 25px;
+	transition: width, 0.5s;
+	color: #2a2b2a;
+}
+.description{
+	width: 80%;
+	margin-left: 15%;
+	margin-right: 5%;
+}
+.navBar p{
+}
+form{
+	text-align: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.option{
+	font-size: 12px;
+}
+#ingredientsSelect{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+select{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.shut{
+	width: 50px;
+}
+
+.open{
+	width: 250px;
+}
+.slider{
+	width: 60px;
+	border: none;
+	background: none;
+	transform: rotate(270deg);
+	float: right;
+	margin-top: 50px;
+	margin-right: -20px;
+	font-weight: 700;
+}
+
+.logo {
+  	position: fixed;
+  	text-align: center;
+  	width: 100%;
+  	height: 75px;
+  	font-family: 'Kaushan Script';
+  	font-weight: 900;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #B40C00;
+	color: #fcd2cf;
+	font-size: 64px;
+	padding: 1rem;
+	padding-left: 0;
+	padding-bottom: 20px;
+}
+
+.logoImg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 50px;
+	width: 50px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.logo p{
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+#showcase h1 {
+	font-size: 3.5rem;
+	margin-top: 170px;
+	font-family: 'Comfortaa', sans-serif;
+	font-weight: 700;
+	color: white;
+	padding: 1rem;
+	user-select: none;
+	text-align: center;
+}
+
+#showcase {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 0 20px;
+}
+
+#showcase #starter {
+	font-size: 1rem;
+	color: #2a2b2a;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #B40C00;
+	border: white solid 1px;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 1rem;
+	transition: background-color 650ms;
+}
+
+#showcase #starter:hover {
+	background-color: #33FF87;
+	color: #2a2b2a;
+	cursor: pointer;
+}
+
+#title{
+	margin-top: 120px;
+	width: 100%;
+	height: 45px;
+	text-align: center;
+}
+.topSec{
+	box-sizing: border-box;
+	margin-top: 30px;
+	width: 100%;
+	min-height: 150px;
+	padding-left: 50px;
+	margin-right: 0;
+}
+#image{
+	float: left;
+    width: 149px;
+    height: 145px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+img{
+	width: 149px;
+	height: 145px;
+}
+#ingredients{
+	display: inline-block;
+	min-height: 145px;
+	min-width: 50%;
+	font-size: 18px;
+}
+
+#instructions{
+	margin-top: 25px;
+	box-sizing: border-box;
+	font-size: 18px;
+    width: 100%;
+    height: 380px;
+    padding-left: 50px;
+}
+
+footer{
+    width: 341px;
+    height: 38px;
+    top: 763px;
+}
+
+.oops{
+	position: fixed;
+	top: 130px;
+	min-height: 300px;
+	width: 80%;
+	margin: 0 6%;
+	align-items: center;
+	color: white;
+	padding: 0 20px;
+	background-color: #2a2b2a;
+	border: 2px solid #b30c00;
+	border-radius: 25%;
+}
+.oops h1{
+	font-size: 3.5rem;
+	margin-top: 170px;
+	font-family: 'Comfortaa', sans-serif;
+	font-weight: 700;
+	color: white;
+	padding: 1rem;
+	user-select: none;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 40px;
+}
+#retry{
+	font-size: 1rem;
+	color: #2a2b2a;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #B40C00;
+	border: white solid 1px;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 1rem;
+	transition: background-color 650ms;
+	margin-left: 150px;
+	margin-right: 175px;
+}
+
+.shopping{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 50px;
+	width: 60px;
+	height: 60px;
+	background-color: #fbb124;
+	border-radius: 25px;
+	transition: width 1.0s, height .5s;
+	overflow: auto;
+}
+
+.shoppingList{
+	min-height: 600px;
+	min-width: 300px;
+}
+.nutContainer{
+	min-width: 0;
+	min-height: 0;
+	margin: 10px;
+	padding: 10px;
+	background-color: #2a2b2a;
+	border-radius: 25px;
+	transition: width 1.0s, height .5s;
+
+}
+.zeroBottom{
+	margin-bottom: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.cart{
+	height: 50px;
+	width: 50px;
+	margin: 5px;
+}
+.shopper{
+	color: #2a2b2a;
+	font-size: 24px;
+}
+
+@media screen and (min-width: 720px){
+	.navBar{
+		position: fixed;
+		top: 110px;
+		left: 0;
+		width: 100%;
+		height: 30px;
+	}
+	form{
+		height: 30px;
+		margin-top: 0;
+		margin-left: 10px;
+	}
+	input, select, label{
+		float: left;
+		display: inline;
+		height: 80%;
+		margin: 3px;
+	}
+	br{
+		display: none;
+	}
+	#ingredientsSelect{
+		margin: 2px;
+		height: 70%;
+	}
+	.slider{
+		transform: none;
+		margin-top: 0;
+		margin-right: 15px;
+	}
+	form button{
+		margin-top: 3px;
+		color: #fcd2cf;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #B40C00;
+	}
+	.open{
+		height: 100px;
+	}
+	#title{
+		padding-top: 30px;
+	}
+	.shopping{
+		margin-right: -10px;
+		height: 400px;
+
+	}
+	.shoppingList{
+		height: 400px;
+	}
+
+}
