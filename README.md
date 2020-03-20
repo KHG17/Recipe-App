@@ -9,3 +9,4 @@ When you have food in the fridge but don't know what to make, Quick Chef will ra
 Technologies
 
 For this app we used:  HTML | CSS | JS | jQuery | RESTful API calls
+Partner: Matthew Thomas
