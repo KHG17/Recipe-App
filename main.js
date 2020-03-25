@@ -13,13 +13,11 @@ const ingSearchString = str => {
 }
 //pulls recipes from the spoonacular api based on search values and runs renderRecipe()
 function getRecipes() {
-	let api_key = '849d4e84cfcd41858d9dda42ac775fb2';
-	let cuisine = $('#cuisine').val();
-	console.log(cuisine)
-	let diet = $('#diet').val();
-	console.log(diet)
-	let enteredIngredients = $('#ingredientsSelect').val();
-	let ingredients = ingSearchString(enteredIngredients);
+	const api_key = '849d4e84cfcd41858d9dda42ac775fb2';
+	const cuisine = $('#cuisine').val();
+	const diet = $('#diet').val();
+	const enteredIngredients = $('#ingredientsSelect').val();
+	const ingredients = ingSearchString(enteredIngredients);
 	fetch(`https://api.spoonacular.com/recipes/complexSearch?includeIngredients=${ingredients}&fillIngredients=true&cuisine=${cuisine}&diet=${diet}&instructionsRequired=true&addRecipeInformation=true&apiKey=${api_key}`)
 		.then(response => response.json())
 		.then(responseJson => {
@@ -48,7 +46,7 @@ function submit() {
 		$('#instructions').removeClass('hidden')
 		$('footer').removeClass('hidden')
 		$('#shopping').removeClass('hidden')
-	})
+	});
 }
 //Event listeners for the slider, start, and retry buttons
 
@@ -161,7 +159,7 @@ $('.cart').on('click', event => {
 
 //list nutriction Information
 function nutritionInformation(obj) {
-	let api_key = '849d4e84cfcd41858d9dda42ac775fb2';
+	const api_key = '849d4e84cfcd41858d9dda42ac775fb2';
 	fetch(`https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/${obj.id}/nutritionWidget?defaultCss=true`, {
 		"method": "GET",
 		"headers": {
@@ -182,6 +180,4 @@ function nutritionInformation(obj) {
 //print each missed ingredient to the list
 
 
-
-submit()
-
+$(submit)
