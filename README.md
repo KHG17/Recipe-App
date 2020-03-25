@@ -14,4 +14,4 @@ Partner: Matthew Thomas
 
 Landing Page:
 
-![Landing Page](https://photos.app.goo.gl/eMbXjwtUjgRaUmd67)
+![Landing Page](https://photos.app.goo.gl/eMbXjwtUjgRaUmd67.png)
