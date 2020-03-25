@@ -11,3 +11,6 @@ Technologies
 For this app we used:  HTML | CSS | JS | jQuery | RESTful API calls
 
 Partner: Matthew Thomas
+
+Landing Page:
+![Landing Page](recipe1.png)
