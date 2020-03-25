@@ -14,4 +14,4 @@ Partner: Matthew Thomas
 
 Landing Page:
 
-![Landing Page](recipe1.png)
+![Landing Page](https://github.com/KHG17/Recipe-App/blob/master/images/recipe1.png)
