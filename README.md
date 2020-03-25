@@ -14,4 +14,4 @@ Partner: Matthew Thomas
 
 Landing Page:
 
-![Landing Page](recipe1)
+![Landing Page](https://octodex.github.com/images/recipe1.png)
