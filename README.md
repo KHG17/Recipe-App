@@ -15,3 +15,15 @@ Partner: Matthew Thomas
 Landing Page:
 
 ![Landing Page](https://github.com/KHG17/Recipe-App/blob/master/images/recipe1.png)
+
+Home Screen:
+
+![Home Screen](https://github.com/KHG17/Recipe-App/blob/master/images/recipe2.png)
+
+Searched Item Result:
+
+![Results](https://github.com/KHG17/Recipe-App/blob/master/images/recipe3.png)
+
+Nutrition Info:
+
+![Nutrition](https://github.com/KHG17/Recipe-App/blob/master/images/recipe4.png)
