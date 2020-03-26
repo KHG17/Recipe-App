@@ -27,8 +27,8 @@ function getRecipes() {
 				renderRecipe(responseJson)
 			}
 		})
-		.catch(error => console.log(error))
-	formReset()
+		.catch(error => console.error('Error:', error));
+	formReset();
 }
 
 //listens for submit button to be pressed and empties each section and runs getRecipe function
@@ -36,7 +36,7 @@ function submit() {
 	$('#recipeForm').submit(event => {
 		event.preventDefault();
 		nutritionInformation.id = "";
-		emptyDisp()
+		emptyDisp();
 		$('.navBar').toggleClass('shut')
 		$('.navBar').toggleClass('open')
 		$('#recipeForm').toggleClass('hidden')
@@ -84,14 +84,14 @@ function renderRecipe(obj) {
 	//print used ingredients
 	for (let i = 0; i < obj.results[rand].usedIngredients.length; i++) {
 		$('#ingredients').find('ol').append(`<li>${obj.results[rand].usedIngredients[i].original}</li>`)
-	}
+	};
 	for (let i = 0; i < obj.results[rand].missedIngredients.length; i++) {
 		$('#ingredients').find('ol').append(`<li>${obj.results[rand].missedIngredients[i].original}</li>`)
-	}
+	};
 
 	obj.results[rand].analyzedInstructions[0].steps.forEach(obj => {
 		$('#instructions').append(`<li>${obj.step}</li>`)
-	})
+	});
 	// print url
 	$('footer').append(`<a href=${obj.results[rand].sourceUrl}`)
 
@@ -105,7 +105,7 @@ function emptyDisp() {
 	$('#image').replaceWith('<section class="" id="image"></section>')
 	$('#ingredients').replaceWith('<section class="hidden" id="ingredients"><h3>Ingredients:</h3><ol class="ingredientList"></ol></section>')
 	$('#instructions').replaceWith('<section class="hidden" id="instructions"><h3>Instructions:</h3><ol class="instructList"></ol></section>')
-	getRecipes()
+	getRecipes();
 }
 
 function formReset() {
@@ -180,4 +180,4 @@ function nutritionInformation(obj) {
 //print each missed ingredient to the list
 
 
-$(submit)
+$(submit);
