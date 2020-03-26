@@ -7,8 +7,8 @@ const ingredientsObject = {
 const ingSearchString = str => {
 	let arr = str.replace(/(,\s*)+/, ',');
 	arr = arr.replace(/(and\s*)+/, "");
-	let newArr = arr.split(" ");
-	let lastArr = newArr.join(',');
+	const newArr = arr.split(" ");
+	const lastArr = newArr.join(',');
 	return lastArr;
 }
 //pulls recipes from the spoonacular api based on search values and runs renderRecipe()
@@ -76,7 +76,7 @@ $('#retry').on('click', event => {
 })
 
 function renderRecipe(obj) {
-	let rand = Math.floor(Math.random() * obj.results.length);
+	const rand = Math.floor(Math.random() * obj.results.length);
 	//print rcipe title
 	$('#title').append(`<h2>${obj.results[rand].title}</h2>`);
 	//print recipe image
